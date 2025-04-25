@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achieve - Donate</title>
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="stylesheet" href="./CSS/nav.css">
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="announcement" role="alert"> 
+      APPLY NOW: Achieve is hiring a spring/summer <a href="Apply">youth mentor</a> to help support <a href="Apply">program participants</a>!
+    </div>
+    
+    <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+      <ul>
+        <div class="logo">
+          <a href="/" aria-label="Home">
+            <img src="./Images/logo.svg" alt="Achieve Logo - Click to return to home page" class="logo-image">
+          </a>
+        </div>
+        <li><a href="/" aria-current="page">Home</a></li>
+        
+        <div class="dropdown">
+          <li><a class="dropdown-title" href="About" aria-haspopup="true" aria-expanded="false">About</a></li>
+          <div class="dropdown-menu" role="menu">
+            <li role="menuitem"><a href="Background">Background</a></li>
+            <li role="menuitem"><a href="Press">Press</a></li>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <li><a class="dropdown-title" href="Programs" aria-haspopup="true" aria-expanded="false">Programs</a></li>
+          <div class="dropdown-menu" role="menu">
+            <li role="menuitem"><a href="Little Engine Eatery">Little Engine Eatery</a></li>
+            <li role="menuitem"><a href="Coffee Shop">Coffee Shop</a></li>
+            <li role="menuitem"><a href="Achieve Social">Achieve Social</a></li>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <li><a class="dropdown-title" href="Contact" aria-haspopup="true" aria-expanded="false">Contact</a></li>
+          <div class="dropdown-menu" role="menu">
+            <li role="menuitem"><a href="Apply">Apply</a></li>
+            <li role="menuitem"><a href="Volunteer">Volunteer</a></li>
+            <li role="menuitem"><a href="Contact Us">Contact Us</a></li>
+          </div>
+        </div>
+
+        <li><a href="Donate">Donate</a></li>
+        <li><a href="Events">Events</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="donate-form" role="main">
+    <h2 id="donate-form-title">We Can't Do It Without You - Donate Today</h2>
+    <div class="form-box" role="form" aria-label="Donation Form">
+      <fieldset>
+      <legend><h3>Achieve, Inc.</h3></legend>
+      <div class="amount-options">
+        <label><input type="radio" name="amount" value="10"> $10</label>
+        <label><input type="radio" name="amount" value="25"> $25</label>
+        <label><input type="radio" name="amount" value="50"> $50</label>
+        <label><input type="radio" name="amount" value="75"> $75</label>
+        <label>
+          <input type="radio" name="amount" value="other" aria-describedby="customAmountLabel"> 
+          Other 
+          <input type="number" id="customAmount" name="customAmount" placeholder="$ Amount" aria-label="Enter custom amount">
+        </label>
+      </div>
+    </fieldset>
+      <div class="recurring">
+        <label><input type="checkbox" name="recurring"> Recurring monthly donation</label>
+      </div>
+      <button type="submit">Donate</button>
+      
+  </section>
+      
+       
+      
+
+  <footer role="contentinfo">
+    <div class="signup" role="form" aria-labelledby="footerform" aria-describedby="footerdescribe">
+      <h3 id="footerform">Connect With Us</h3>
+      <p id="footerdescribe">Stay informed of what we're doing. Enter your name and email:</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" aria-required="true">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" aria-required="true">
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+
+    <div class="footer-columns">
+      <div>
+        <h4>Contact Info</h4>
+        <p>16417 CR 325<br>Buena Vista, CO 81211</p>
+        <p>info@achievelifeskills.org<br>719.395.4006</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <p><a href="Home">Home</a> | <a href="About">About</a> | <a href="Programs">Programs</a></p>
+        <p><a href="Apply">Apply</a> | <a href="Donate">Donate</a> | <a href="Events">Events</a></p>
+      </div>
+    </div>
+
+    <p class="center">© Achieve, Inc. dba Little Engine Eatery 2017–2025 | 501(c)(3) EIN: 37-1860566</p>
+  </footer>
+</body>
+</html>

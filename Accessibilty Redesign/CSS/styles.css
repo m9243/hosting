@@ -1,0 +1,222 @@
+/* styles.css */
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+main {
+  padding: 0;
+}
+
+section {
+  margin-bottom: 0;
+  padding: 3rem 2rem;
+  border-radius: 0;
+  width: 100%;
+}
+
+.highlight {
+  color: rgb(232, 230, 115);
+}
+
+.purple {
+  background: #331066;
+}
+
+.gold {
+  background: #c18f2b;
+  color: #000;
+}
+
+.lavender {
+  background: #e4cff7;
+  color: #222;
+}
+
+.center {
+  text-align: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.two-col-wrap,
+.three-col {
+  display: grid;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.two-col-wrap {
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.three-col {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  text-align: center;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+}
+
+.highlight a {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  margin-top: 1rem;
+  background-color: #ffffff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+  width: fit-content;
+}
+
+.highlight a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.signup form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 1rem auto;
+  gap: 0.5rem;
+}
+
+.signup input,
+.signup button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.signup button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.footer-columns a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-columns a:hover {
+  text-decoration: underline;
+}
+#donate-form {
+  background-color: #f4e6c1;
+  padding: 4rem 1.5rem;
+  font-family: Arial, sans-serif;
+  color: #222;
+  text-align: center;
+}
+
+#donate-form h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* === Inner Form Box === */
+#donate-form .form-box {
+  background-color: #fff;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* === Amount Options === */
+#donate-form .amount-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+#donate-form .amount-options label {
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#donate-form .amount-options input[type="number"] {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  width: 120px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* === Recurring Checkbox === */
+#donate-form .recurring {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* === Submit Button === */
+#donate-form button {
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.75rem;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#donate-form button:hover {
+  background-color: #000;
+}
+
+
+
+fieldset {
+  border: 0;
+}
+
